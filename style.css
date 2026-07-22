@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root { /*ini fungsi nya biar kalo style lainnya sama, gausah bolak balik nulis*/
+    --bg: #0d1b3a;
+    --bg-elevated: #13263b;
+    --font-mono: "JetBrains Mono", monospace;
+    --font-sans: "Inter", sans-serif;
+    --text: #e8eef2;
+    --border: #24374a; 
+    --text-muted: #8fa3b3;
+    --accent: #64ffda;
+    --accent-warm: #ffb454;
+}
+
+body-light {
+    --bg: #f4f7f6;
+    --bg-elevated: #ffff;
+    --text: #0d1b2a;
+    --texxt-muted: #4a5c68;
+    --border: #d9e2e3;
+}
+
+.eyebrow {
+    font-family: var(--font-mono);
+    color: var(--accent);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+section {
+    padding: 80px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1,5;
+}
+
+h1,h2,h3, .logo{
+    font-family: var(--font-mono);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid var(--border);
+    position: sticky; /* ini biar posisi navbar nya ikut turun ke bawah*/
+    top: 0;
+    background-color: var(--bg);
+    z-index: 10;
+}
+
+.logo{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    font-family: var(--font-mono);
+    font-size: 14px;
+}
+
+.nav-list a {
+    color: var(--accent);
+    transition: 0.3s; 
+}
+
+modeToggle {
+    border: 1px solid var(--border);
+    background: none;
+    color: var(--text);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
